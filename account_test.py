@@ -72,12 +72,12 @@ class TestAccount(unittest.TestCase):
 
         self.assertTrue(account_exists)
 
-#     def test_display_all_accounts(self):
-#         '''
-#         method that returns a list of all accounts saved
-#         '''
-#         displayed = Account.display_accounts()
-#         self.assertEqual(displayed,Account.account_list)    
+    def test_display_all_accounts(self):
+        '''
+        method that returns a list of all accounts saved
+        '''
+        displayed = Account.display_accounts()
+        self.assertEqual(displayed,Account.account_list)    
         
 
         
@@ -89,5 +89,5 @@ class TestAccount(unittest.TestCase):
 
 
 
-# if __name__ == "__main__":
-#     unittest.main()
+if __name__ == "__main__":
+    unittest.main()
