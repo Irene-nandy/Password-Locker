@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.8
+#!/usr/bin/env python3.6
 from account import Account
 from credentials import Credentials
 
@@ -90,18 +90,18 @@ def main():
      short_code = input().lower()
 
      if short_code == 'su':
-            print("Create a PassWord Locker Account")
+            print("Create a Password-Locker Account")
             print("_"*100)
             account_name = input('Account name:')
             print ('\n')
-            u_name = input('User name:')
+            u_name = input('UserName:')
             print ('\n')
             pwd = input('Password : ')
             print ('\n')
-            e_address = input('Email address:')
+            e_address = input('Email Address:')
             save_accounts(create_account(account_name,u_name,pwd,e_address)) 
             print ('\n')
-            print(f"A New {account_name} Account with the user name  {u_name} has been created.")
+            print(f"Congratulations A New {account_name} Account with the user name  {u_name} has been created successfully.")
             print(f"You can now login to your {account_name} account using your password.")
             print ('\n')
      elif short_code == "ex":
