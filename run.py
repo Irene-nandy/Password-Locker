@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.6
+#!/usr/bin/env python3.8
 from account import Account
 from credentials import Credentials
 
@@ -80,45 +80,45 @@ def display_credentials():
 
 
 def main():
-    print("Hello Welcome to your PassWord-Locker. What is your name?")
+    print("Hello Welcome to your Pass Word Locker. What is your name?")
     user_name = input()
-    print(f"Hello {user_name}, sign up to password locker and create an account now!!!")
+    print(f"Hello {user_name}, sign up to password locker to create an account now!!!")
     print('\n')
 
     while True:
-     print("Use these known short codes to operate :\n SU -> SIGN UP.\n DA -> Display your account.\n LN ->LOGIN.\n EX ->exit PassWord-Locker.")   
+     print("Use these known short codes to operate :\n SU -> SIGN UP.\n DA -> Display your account.\n LN ->LOGIN.\n EX ->exit Pass Word Locker.")   
      short_code = input().lower()
 
      if short_code == 'su':
-            print("Create a Password-Locker Account")
+            print("Create a PassWord Locker Account")
             print("_"*100)
             account_name = input('Account name:')
             print ('\n')
-            u_name = input('Username:')
+            u_name = input('User name:')
             print ('\n')
             pwd = input('Password : ')
             print ('\n')
             e_address = input('Email address:')
             save_accounts(create_account(account_name,u_name,pwd,e_address)) 
             print ('\n')
-            print(f"A New {account_name} Account with the user name  {u_name} has been created successfully.")
+            print(f"A New {account_name} Account with the user name  {u_name} has been created.")
             print(f"You can now login to your {account_name} account using your password.")
             print ('\n')
      elif short_code == "ex":
-            print(f"Thanks {user_name} for your time.I hope you enjoyed Password-Locker services.Nice Day {user_name}...")
+            print(f"Thanks {user_name} for your time.I hope you enjoyed Password Locker services.Nice Day {user_name}...")
             break
             
 
      elif short_code == 'da':
              if display_accounts():
-                 print("Here is your account and all your details")
+                 print("Here is your account and your details")
                  print('\n')
                  for account in display_accounts():
                      print(f"Account name:{account.account_name}  User name: {account.user_name} Password:{account.password}")
                      print('\n')
              else:
                  print('\n')
-                 print("You don`t seem to have created an account.Sign up to create a new account.")
+                 print("You dont seem to have created an account.Sign up to create a new account.")
                  print('\n')
 
      elif short_code == 'ln':
@@ -168,7 +168,7 @@ def main():
                         break
          
      else:
-        print("Please enter valid inputs to continue..") 
+        print("Please enter a valid input to continue..") 
         print('\n')    
 
 
