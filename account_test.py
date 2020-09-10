@@ -14,12 +14,12 @@ class TestAccount(unittest.TestCase):
         self.assertEqual(self.new_account.password,"Irynkcv254")
         self.assertEqual(self.new_account.email,"irene@twitter.com")
 
-#     def test_save_account(self):
-#         """
+    def test_save_account(self):
+        """
 
-#         """
-#         self.new_account.save_account()
-#         self.assertEqual(len(Account.account_list),1)
+        """
+        self.new_account.save_account()
+        self.assertEqual(len(Account.account_list),1)
 
 #     def tearDown(self):
 #         """
