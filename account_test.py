@@ -1,18 +1,18 @@
 import unittest # importing the unittest module
 from account import Account # importing the class account
 
-# class TestAccount(unittest.TestCase):
-#     def setUp(self):
-#         self.new_account = Account("Irene Kasiva","Twitter","Iryn254","irene@twitter.com") #Creating accounts objectives.
+class TestAccount(unittest.TestCase):
+    def setUp(self):
+        self.new_account = Account("Irene Kasiva","Twitter","Iryn254","irene@twitter.com") #Creating accounts objectives.
 
-#     def test_init(self):
-#         """
-#         test_init is to test if the objects are initialized properly
-#         """ 
-#         self.assertEqual(self.new_account.user_name,"Irene Kasiva")
-#         self.assertEqual(self.new_account.account_name,"Twitter")
-#         self.assertEqual(self.new_account.password,"Irynkcv254")
-#         self.assertEqual(self.new_account.email,"irene@twitter.com")
+    def test_init(self):
+        """
+        test_init is to test if the objects are initialized properly
+        """ 
+        self.assertEqual(self.new_account.user_name,"Irene Kasiva")
+        self.assertEqual(self.new_account.account_name,"Twitter")
+        self.assertEqual(self.new_account.password,"Irynkcv254")
+        self.assertEqual(self.new_account.email,"irene@twitter.com")
 
 #     def test_save_account(self):
 #         """
